@@ -12,14 +12,14 @@ export const App = () => {
   return (
     <>
       <Router>
-        <Main />
+        <Main/>
         <LoadingBar
           color='#f11946'
           height='3px'
           progress={progress}
         />
         < Routes>
-
+         
           <Route exact path="/science" element={<News api_key={api_key} setProgress={setProgress} key='science' pageSize={12} category="science" country="in" />} />
           <Route exact path="/general" element={<News api_key={api_key} setProgress={setProgress} key='general' pageSize={12} category="general" country="in" />} />
           <Route exact path="/technology" element={<News api_key={api_key} setProgress={setProgress} key='technology' pageSize={12} category="technology" country="in" />} />

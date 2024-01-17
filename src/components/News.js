@@ -24,7 +24,7 @@ export function News(props) {
 
     useEffect(() => {
         componentDidMount();
-    },[]);
+    }, []);
 
     const handleprevious = async () => {
         props.setProgress(10);
@@ -91,17 +91,10 @@ export function News(props) {
                     })}
             </div>
             <div className="container py-5 d-flex justify-content-between">
-                <button
-                    disabled={page <= 1}
-                    className="btn btn-dark"
-                    onClick={handleprevious}
-                >
-                    {" "}
-                    &larr; Previous
-                </button>
-                <button className="btn btn-dark" disabled = {page >= 6} onClick={handlenext}>
-                    {" "}
-                    Next &rarr;{" "}
+                <button disabled={page <= 1}  className="btn btn-dark" onClick={handleprevious} >
+                    {" "} &larr; Previous </button>
+                <button className="btn btn-dark" disabled={page >= 6} onClick={handlenext}>
+                    {" "} Next &rarr;{" "}
                 </button>
             </div>
         </div>
