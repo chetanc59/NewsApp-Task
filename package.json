@@ -1,4 +1,5 @@
-{ "homepage": "https://ChetanJangir.github.io/NewsRead",
+{
+  "homepage": "https://ChetanJangir.github.io/NewsRead",
   "name": "news_app",
   "version": "0.1.0",
   "private": true,
